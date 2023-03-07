@@ -7,27 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* 동시에 여러 조건을 만족하는 경우 */
-        li.orange {
+        /* 후손을 선택함
+        맨 뒤가 타겟, 앞에는 조건 */
+        div .orange {
             background-color: orange;
         }
 
-        div#tomato {
-            background-color: aqua;
-        }
-
-        #apple.reverse {
-            color: red;
-        }
-        h1.yellow.low.primary#change{
-            background-color: yellow;
+        body #tomato {
+            background-color: tomato;
         }
     </style>
 </head>
 
 <body>
         
-    <h1 id="change" class="yellow low primary center">안녕하세요</h1>
+    <h1 id="change" class="yellow low primary ">안녕하세요</h1>
     <!-- div>ul>li*3 -->
     <div>
         <ul>
@@ -35,12 +29,12 @@
             <li>포도</li>
             <li class="orange">오렌지</li>
         </ul>
+        
+        <!-- div+p+span -->
+        <div>당근</div>
+        <p id="tomato">토마토</p>
+        <span class="orange">오렌지</span>
     </div>
-
-    <!-- div+p+span -->
-    <div>당근</div>
-    <p id="tomato">토마토</p>
-    <span class="orange">오렌지</span>
 
 </body>
 
