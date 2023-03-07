@@ -16,6 +16,10 @@
         body #tomato {
             background-color: tomato;
         }
+        .wrap div {
+            font-size: 1.5em;
+            color: orangered;
+        }
     </style>
 </head>
 
@@ -23,7 +27,7 @@
         
     <h1 id="change" class="yellow low primary ">안녕하세요</h1>
     <!-- div>ul>li*3 -->
-    <div>
+    <div class="wrap">
         <ul>
             <li id="apple" class="reverse center">사과</li>
             <li>포도</li>
@@ -31,7 +35,9 @@
         </ul>
         
         <!-- div+p+span -->
-        <div>당근</div>
+        <section>
+            <div>당근</div>
+        </section>
         <p id="tomato">토마토</p>
         <span class="orange">오렌지</span>
     </div>
