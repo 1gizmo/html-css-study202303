@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list li:nth-child(odd){
+            background: yellow;
+        }
+        #list li:nth-child(even){
+            background: gray;
+        }
+        #list li:first-child {
+            color: red;
+        }
+        #list li:last-child {
+            color: green;
+        }
+        #list li:nth-child(2){
+            font-style: italic;
+        }
+        #list li:nth-child(-n + 2){
+                border: 2px dotted aqua;
+        }
+        /* li:nth-child(2) ~ li */
+       #list li:nth-child(2) ~ li {
+            border: 2px dashed violet;
+        }
+    </style>
+</head>
+<body>
+    
+
+        <!-- #wrap>ul#list>li{리스트$}*7 -->
+        <div id="wrap">
+            <ul id="list">
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트3</li>
+                <li>리스트4</li>
+                <li>리스트5</li>
+                <li>리스트6</li>
+                <li>리스트7</li>
+            </ul>
+        </div>
+
+</body>
+</html>
