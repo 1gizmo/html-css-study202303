@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            #fruits li:first-child{
+                color: red;
+            }
+            #fruits li:last-child{
+                color: yellowgreen;
+            }
+            #fruits li:nth-child(5){
+                color: yellow;
+            }
+            /* n에 0부터 순서대로 대입 했을때
+                나오는 숫자의 위치 요소를 선택  */
+            #fruits li:nth-child(2n + 1){
+                color: blue;
+            }
+            #fruits li:not(.orange){
+                font-style: italic;
+            }
+            .main p:nth-child(3){
+                font-size: 1.5em;
+                color: red  ;
+            }
+    </style>
+</head>
+<body>
+
+            <!-- ul#fruits>li*7 -->
+            <ul id="fruits">
+                <li>딸기</li>
+                <li>사과</li>
+                <li class="orange">오렌지</li>
+                <li>망고</li>
+                <li>바나나</li>
+                <li>자몽</li>
+                <li>라임</li>
+            </ul>
+    
+
+                <section class="main">
+                <div>안녕1</div>
+                <p>안녕2</p>
+                <p>안녕3</p>
+                <p>안녕4</p>
+                <p>안녕5</p>
+                <h1>안녕6</h1>
+                </section>
+</body>
+</html>
