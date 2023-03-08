@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            html {
+                font-size: 10px;
+            }
+            body {
+                font-size: 15px;
+            }
+            div {
+                border: 2px solid gray;
+            }
+            .root {
+                /* em의 단위 = 40 X 20 = 800px */
+                /* width: 40em; */
+                
+                /* html fontsize 10px x 40 = 400px  */
+                width: 40rem;
+                font-size: 20px;
+            }
+            .parent {
+                width: 50%;
+                font-size: 1.5em;   /* 30px */
+            }
+            .child {
+                width: 50%;
+            }
+
+    </style>
+</head>
+<body>
+    
+    <!-- .root>.parent>.child*2 -->
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Chilod1</div>
+            <div class="child">Chilod2</div>
+        </div>
+    </div>
+
+</body>
+</html>
