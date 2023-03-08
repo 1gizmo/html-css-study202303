@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hello {
+            background: red;
+            width: 400px;
+            height: 200px;
+
+            /* span에 기본적으로 inline 속성이 숨어있는데 block으로 바꿔줄 수 잇음 */
+            display: block;
+        }
+        .box {
+            margin-top: 50px;
+        }
+        .box input:nth-child(3) {
+          /* 요소를 숨기는 방법 2가지 
+            1.display: none; 완전히 사라짐
+            2.opacity: 0; 흐리게 만들어 안보이게 해줌, 사라진게아님, 애니메이션 효과 줄때 사용 가능
+        */
+           
+          display: none;
+            /* opacity: 0; */
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <span id="hello">안녕하세요^^</span>
+    
+    <div class="box">
+        <input type="text" value="1">
+        <input type="text" value="2">
+        <input type="text" value="3">
+        <input type="text" value="4">
+        <input type="text" value="5">
+    </div>
+
+
+    <script>
+
+        hello.onclick = e => {
+            hello.style.display = 'none';
+        };
+        // disploy : none 은 사라지면 본인이 있던 자리도 없어짐
+    </script>
+
+
+</body>
+</html>
