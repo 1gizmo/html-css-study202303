@@ -1,4 +1,7 @@
-    /* common style */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+   
+   
+   /* common style */
     * {
         box-sizing: border-box;
     }
