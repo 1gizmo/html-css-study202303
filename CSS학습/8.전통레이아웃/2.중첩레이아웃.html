@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 해제용 클래스 */
+       .clearfix::after {
+                content: '';
+                display: block;
+                clear: left;
+        }
+        
+        .ct {
+            width: 700px;
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid;
+        }
+        .container1 {
+            border-color:  red;
+            /* overflow: hidden; */
+        }
+        .container2 {
+            border-color:  blue;
+        }
+        .container3 {
+            border-color:  green;
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            border-radius: 20px;
+
+            float: left;
+        }
+     
+    </style>
+</head>
+<body>
+    
+
+
+    <!-- .container1>.box*3 -->
+    <div class="ct container1 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="vbox"></div> -->
+    </div>
+    <div class="ct container2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      
+    </div>
+    <div class="ct container3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+   
+    </div>
+
+</body>
+</html>
