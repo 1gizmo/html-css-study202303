@@ -33,6 +33,24 @@
             top: 50px;
             right: 30px;
         }
+        .parent a {
+            background: orange;
+            width: 100px;
+            height: 100px;
+            /* position: absolute; */
+            /* float: left;*/
+            /*
+                인라인 속성의 태그는 position : absolute나
+                float 속성이 부여되면 자동으로 block성질로 변환
+            */
+        }
+        /* 박스 좌우 상하 정중앙 배치 공식 */
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
@@ -41,8 +59,9 @@
     <div class="root">
         <div class="parent ">
             <div class="child ">1</div>
-            <div class="child abs">2</div>
+            <div class="child center">2</div>
             <div class="child">3</div>
+            <a href="#">4444444</a>
         </div>
     </div>
 
