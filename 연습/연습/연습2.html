@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css
+" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header {
+            padding-top: 5px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid gray;
+            width: 80%;
+        }
+
+        header section .menu {
+            font-weight: bold;
+        }
+
+        header section div {
+            display: block;
+            color: limegreen;
+            float: right;
+            font-size: 9px;
+            margin: 3px;
+        }
+        /* ----------여기까지 header */
+    body .main {
+        width: 80%;
+        margin: 10px 0px 20px;
+        border: 2px solid gray;
+        
+    }
+    section .headbox {
+        display: block;
+        width: 80%;
+        font-weight: bold;
+        color: tomato;
+        border-bottom: 1px dashed tomato;
+        margin: 10px auto 5px;
+        
+    }
+    section .bigbox {
+            width: 200px;
+            margin: 0px auto;
+    }
+    section .box {
+        width: 100px;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        border: 1px solid blue;
+    }
+    section .bodybox1{
+        /* width: 25%; */
+        /* height: 55%; */
+        /* border: 1px solid blue; */
+    }
+    section .bodybox2{
+        /* width: 25%; */
+        /* height: 55%; */
+        /* border: 1px solid blue; */
+    }
+    section .bodybox3{
+        /* width: 25%; */
+        /* height: 55%; */
+        /* border: 1px solid blue; */
+    }
+    section div .smallbox1 {
+        /* text-align: center; */
+        font-weight: bold;
+    }
+    section div .smallbox2 {
+        text-align: center;
+        
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <section class="menu">로고
+            <div class="menu1">메뉴1</div>
+            <div class="menu2">메뉴2</div>
+            <div class="menu3">메뉴3</div>
+        </section>
+    </header>
+
+    <section class="main">
+        <div class="headbox">Section</div>
+        <div class="bigbox">
+            <div class="bodybox1 box">
+                <div class="smallbox1">Article1</div>
+                <div class="smallbox2">내용 블라블라 .. ^^</div>
+            </div>
+            <div class="bodybox2 box">
+                <div class="smallbox1">Article2</div>
+                <div class="smallbox2">내용 블라블라 .. ^^</div>
+            </div>
+            <div class="bodybox3 box">
+                <div class="smallbox1">Article3</div>
+                <div class="smallbox2">내용 블라블라 .. ^^</div>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="mail"><a href="#">이메일 전송</a></div>
+        <div class="phone"><a href="#">전화걸기</a></div>
+    </footer>
+    <aside>side</aside>
+</body>
+
+</html>
